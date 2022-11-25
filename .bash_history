@@ -1,75 +1,3 @@
-make prog17
-./prog17
-ls
-nano prog21.c
-make prog21
-./prog21
-ls
-nano prog11.c
-make prog11
-nano prog11.c
-make prog11
-./prog11
-nano prog21.c
-nano prog11.c
-make prog11
-./prog11
-nano prog20.c
-make prog20
-nano prog20.c
-make prog20
-./prog20
-ls
-mkdil array
-mkdir array
-cd array
-ls
-../
-cd ../
-ls
-cd array
-nano prog4.c
-make prog4
-logout
-pwd
-clear
-logout
-ls
-cd assigment3
-ls
-cd array
-ls
-nano prog10.c
-make prog10
-./prog10
-nano prog10.c
-make prog10
-./prog10
-nano prog10.c
-make prog10
-./prog10
-nano prog10.c
-make prog10
-./prog10
-nano prog10.c
-nano prog11.c
-make prog11
-nano prog11.c
-make prog11
-cc prog11.c -o prog11 -lm
-./prog11
-nano prog9.c
-make prog9
-nano prog9.c
-make prog9
-nano prog9.c
-make prog9
-./prog9
-ls
-nano prog4.c
-make prog4
-nano prog4.c
-make prog4
 ./prog4
 nano prog4.c
 make prog4
@@ -998,3 +926,75 @@ nano Prog5.cpp
 nano Prog4.cpp
 nano Prog4.c
 nano Prog5.cpp
+ls
+clear
+ls
+clear
+ls
+git push
+git init
+clear
+cd .ssh
+ls
+nano id_rsa.pub
+clear
+cd ../
+clear
+git branch -M main
+clear
+git branch
+clear
+git branch -r
+git branch -m main
+git pull
+ls
+clear
+cd .git
+ls
+clear
+cd ../
+ls
+rm .git
+rm -r .git
+ls
+git init
+git remote add origin git@192.30.255.112:PiyasSarkar81/BE.git
+clear
+git branch -M main
+clear
+git config user.name "be21148"
+git config user.email "be21148@ju.com"
+ls
+clear
+git branch -M main
+clear
+git add *
+git commit -m "first"
+git branch -M main
+clear
+git push
+clear
+git push
+  git config --global push.default matching
+clear
+ls
+git push
+clear
+git push -u origin main
+clear
+nano .autopush
+./.autopush
+chmod +x .autopush
+clear
+./.autopush
+clear
+./.autopush
+nano .gitignore
+./.autopush
+git add *
+git add .
+nano .autopush
+clear
+./.autopush
+clear
+exit
