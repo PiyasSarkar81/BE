@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+struct student{
+int Roll number
+char Name[20]
+char Department[20]
+char Course[20]
+int Year of joining
+};
+
+int main(){
+
+return 0;
+ }
