@@ -1,124 +1,3 @@
-./prog4
-nano prog4.c
-make prog4
-ls
-nano prog5.c
-make prog5
-./prog5
-nano prog5.c
-make prog5
-./prog5
-nano prog5.c
-make prog5
-./prog5
-nano prog5.c
-make prog5
-./prog5
-ls
-../
-cd ../
-cd assigment4
-mksir assigment4
-mkdir assigment4
-cd assigment4
-nano prog2.c
-make prog2
-./prog2
-nano prog2.c
-make prog2
-./prog2
-nano prog2.c
-nano prog3.c
-make prog3
-./prog3
-nano prog3.c
-make prog3
-nano prog3.c
-make prog3
-./prog3
-logout
-ls
-cd assigment4
-ls
-nano prog2.c
-nano prog3.c
-nano prog5.c
-make prog5
-./prog5
-nano prog6.c
-make prog6
-./prog6
-nano prog9.c
-make prog9
-nano prog10.c
-make prog10
-nano prog12.c
-make prog12
-nano prog12.c
-make prog12
-nano prog12.c
-make prog12
-nano prog14.c
-make prog14
-nano prog14.c
-make prog14
-nano prog19.c
-make prog19
-ls
-cd assigment4
-ls
-mkdil part2
-mkdir part2
-cd part2
-nano Prog1
-../ part2
-../
-cd ../
-ls
-./prog19
-nano prog19
-nano prog19.c
-make prog19
-ls
-nano prog8.c
-make prog8
-./ prog8
-./prog8
-nano prog8.c
-make prog8
-cd part2
-ls
-nano prog1.c
-nano Prog1.c
-ls
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-./prog1
-nano prog1.c
-make prog
-nano prog4.c
-nano prog1.c
-nano prog4.c
-logout
-ls
-mkdir assigment5
-cd assigment5
 vi prob1
 ls
 nano prog1
@@ -998,3 +877,124 @@ clear
 ./.autopush
 clear
 exit
+ls
+cd OOP
+ls
+assigment1
+cd assigment1
+ls
+nano Prog20
+nano Prog20.cpp
+ls
+Prob20.cpp
+nano Prob20.cpp
+cd ../
+./.autopush
+ls
+cd OPP
+cd OOP
+ls
+cd assigment1
+ls
+nano Prob20.cpp
+make Prob20
+nano Prob20.cpp
+make Prob20
+nano Prob20.cpp
+make Prob20
+./Prob20
+nano Prob21.cpp
+nano Prob20.cpp
+nano Prob21.cpp
+make Prob20
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+./Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+nano Prob21.cpp
+make Prob21
+./Prob21
+nano Prob22.cpp
+ls
+ssh-keygen
+ls -la
+cd .ssh
+cat id_rsa.pub
+git remote add origin git@192.30.255.112:PiyasSarkar81/BE.git
+git init
+git remote add origin git@192.30.255.112:PiyasSarkar81/BE.git
+git add *
+cd OOP
+ls
+cd assigment1
+ls
+nano Prob22.cpp
+ls
+nano Prob22.cpp
+nano Prob21.cpp
+nano Prob22.cpp
+make Prob22
+nano Prob22.cpp
+make Prob22
+nano Prob22.cpp
+make Prob22
+./Prog22
+./Prob22
+nano Prob22.cpp
+make Prob22
+nano Prob22.cpp
+make Prob22
+./Prob22
+nano Prob22.cpp
+logout
