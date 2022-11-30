@@ -1,4 +1,3 @@
-vi prob1
 ls
 nano prog1
 ls
@@ -998,3 +997,4 @@ make Prob22
 ./Prob22
 nano Prob22.cpp
 logout
+./.autopush
