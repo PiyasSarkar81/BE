@@ -1,74 +1,4 @@
 ls
-nano prog1
-ls
-rm prob1
-ls
-cd ../
-cd assigment4
-ls
-cd part2
-ls
-nano prog4.c
-cd ../
-cd assigment4
-cd part2
-ls
-make prog4
-./prog4
-cd assigment4
-cd part4
-cd prob2
-ls
-cd prog4
-nano prog4
-nano prog4.c
-cd ../
-cd../
-cd ../
-cd assigment5
-ls
-nano prog1
-make prog1
-nano prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-cc     prog1.c   -o prog1
-cc     prog1.c   -o prog1 -lm
-
-nano prog1.c
-nano prog2.c
-make prog2
-cc     prog2.c   -o prog2
-cc prog2.c -o prog2 -lm
-./prog2
-nano prog2.c
-./prog2
-nano prog2.c
-nano prog1.c
-make prog1
-nano prog1.c
-make prog1
-cc prog1.c -o prog1 -lm
-./prog1
-nano prog1.c
-./ prog2
-./prog2
-nano prog2.c
-make prog2
-nano prog3.c
-make prog3
-nano prog3.c
-make prog3
-nano prog3.c
-nano prog4.c
-nano prog5.c
-ls
 make prog4
 ./prog4
 make prog4
@@ -998,3 +928,73 @@ make Prob22
 nano Prob22.cpp
 logout
 ./.autopush
+ls
+cd DSA
+ls
+mkdir Assignment2
+ls
+cd Assignment2
+nano prog01.c
+make prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+./prog01
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+./prog01
+nano prog01.c
+./prog01
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog01.c
+make prog01
+./prog01
+nano prog02.c
+nano prog03.c
+nano prog01.c
+nano prog02.c
+nano prog01.c
+nano prog02.c
+nano prog01.c
+nano prog02.c
+make prog02
+nano prog02.c
+nano prog01.c
+nano prog02.c
+make prog02
+nano prog02.c
+make prog02
+nano prog02.c
+make prog02
+nano prog02.c
+make prog02
+nano prog02.c
+make prog02
+./prog02
+nano prog02.c
+make prog02
+./prog02
+nano prog02.c
+../
+../ cd
+cd ../ 
+./.autopush
+logout

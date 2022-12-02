@@ -1,4 +1,6 @@
+
 #include<iostream>
+#include <algorithm>
 using namespace std;
 
 class IntArray{
@@ -6,26 +8,51 @@ int n;
 int *arr;
 
 public:
-IntArray(int x)
+IntArray() : n(0) {}
+IntArray(int x) : n(x)
 {
-n=x;
 arr = new int [x];
 }
-void setElement(int x,int i)
+IntArray( IntArray & a)
 {
-arr[i]=x;
+    n = a.n;
+    arr = new int [a.n];
+    for(int i =0;i<a.n;i++){
+        arr[i] = a.arr[i]; 
+    } 
 }
-void getElement(int i)
+void setElements()
 {
+cout<<"Enter the "<<n<<" elements of the Array"<<endl;
+for(int i=0;i<n;i++)
+{
+int x;
+cin>>x;
+arr[i] = x;
+}
+}
+void getElements()
+{
+for(int i=0;i<n;i++)
 cout<<arr[i]<<" ";
+cout<<endl;
 }
 
 void add(IntArray x)
 {
-cout<<"Addition:"<<endl;
 for(int i=0;i<n;i++)
 cout<<arr[i]+x.arr[i]<<" ";
 cout<<endl;
+}
+
+void Sort() 
+{
+    sort(arr, arr+n);
+}
+
+void Reverse()
+{
+    reverse(arr,arr+n);
 }
 
 };
@@ -35,22 +62,18 @@ int main()
 int n;
 cout<<"Enter the number of elements in the intiger Array."<<endl;
 cin>>n;
-IntArray arr1(n), arr2(n);
-cout<<"Enter the  elements of the 1st Array"<<endl;
-for(int i=0;i<n;i++)
-{
-int x;
-cin>>x;
-arr1.setElement(x,i);
-}
-cout<<"Enter the  elements of the 2st Array"<<endl;
-for(int i=0;i<n;i++)
-{
-int x;
-cin>>x;
-arr2.setElement(x,i);
-}
-arr1.add(arr2);
+IntArray arr1(n);
+arr1.setElements();
+IntArray arr2(arr1);
+cout<<"Second array"<<endl;
+arr2.getElements();
+arr2.Reverse();
+cout<<"After reverse"<<endl;
+cout<<"first array : ";
+arr1.getElements();
+cout<<"second array : ";
+arr2.getElements();
 
 return 0;
 }
+
