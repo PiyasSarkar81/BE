@@ -6,7 +6,7 @@ int *arr;
 
 public:
 
-void set(int x){
+Vector(int x = 0){
 n=x;
 arr = new int [x];
 }
@@ -55,12 +55,10 @@ return 0;
 };
 
 int main(){
-Vector v1, v2;
 cout<<"Enter the number of elements int the vector."<<endl;
 int n;
 cin>>n;
-v1.set(n);
-v2.set(n);
+Vector v1(n), v2(n);
 cout<<"Enter the elements of the 1st vector:"<<endl;
 for(int i=0;i<n;i++)
 {
