@@ -57,51 +57,6 @@ struct node *delatpos(struct node *start,  int pos){
     return start;
 }
 
-// struct node *del(struct node *last,  int data){
-//     struct node *tmp,*p;
-//     if(last == NULL)
-//     {
-//         printf("List is empty.\n");
-//         return last;
-//     }
-//     if(last -> link == last && last -> info == data) //deletion of only node
-//     {
-//         tmp = last;
-//         last = NULL;
-//         free(tmp);
-//         return last;
-//     }
-//     if(last -> link -> info == data) //deletion of 1st node
-//     {
-//         tmp = last -> link;
-//         last -> link = tmp -> link;
-//         free(tmp);
-//         return last;
-//     }
-//     p = last -> link; //deletion in between
-//     while(p-> link != last)
-//     {
-//         if(p->link -> info == data)
-//         {
-//             tmp = p-> link;
-//             p-> link = tmp -> link;
-//             free(tmp);
-//             return last;
-//         }
-//         p = p-> link;
-//     }
-//     if(last -> info == data) // deletion of last node
-//     {
-//         tmp = last;
-//         p-> link = last -> link;
-//         last = p;
-//         free(tmp);
-//         return last;
-//     }
-//     printf("Element %d is not found in list.",data);
-//     return last;
-// }
-
 void count(struct node * start){
     struct node * p;
     p=start;
