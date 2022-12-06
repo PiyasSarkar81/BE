@@ -2,101 +2,96 @@
 #include<stdlib.h>
 
 struct node{
-int info;
-struct node *link;
+    int info;
+    struct node* link;
 };
 
-struct node *last = NULL;
-
-struct node *addatpos(struct node *start,int data, int pos)
-{
-struct node *tmp, *p;
-int i;
-tmp = (struct node*)malloc(sizeof(struct node));
-tmp -> info = data;
-if(pos==1)
-{
-tmp -> link = start;
-start = tmp;
-return start;
-}
-p = start;
-for(i=1;i<pos-1 && p!= NULL ; i++)
-p=p->link;
-if(p==NULL)
-printf("There are less then %d elements.\n",pos);
-else
-{
-tmp -> link = p-> link;
-p->link = tmp;
-}
-return start;
+struct node *addatlist(struct node *last, int data, int pos){
+    struct node *tmp,*p;
+    int i;
+    tmp = (struct node*)malloc(sizeof (struct node));
+    tmp -> info = data;
+    if(pos == 1)
+    {
+        last = tmp;
+        last -> link = last;
+        return last;
+    }
+    tmp -> link = last -> link;
+    last -> link = tmp;
+    last = tmp;
+    return last;
 }
 
-struct node* delatpos(struct node *start,int pos)
-{
-struct node *tmp,*p;
-int i;             
-if(pos==1)
-{
-tmp = start;        
-start = start -> link;
-free(tmp);   
-return start;
-}         
-p = start;    
-for(i=1;i<pos-2 && p!= NULL;i++)
-p = p-> link;
-if(p->link ==NULL)
-printf("There are less then %d elements.\n",pos);
-else{
-tmp = p->link;
-p->link = p-> link->link;
-free(tmp);
-}
-return start;
+struct node *create_list(struct node * last){
+    int n,i;
+    struct node *p = last;
+    printf("Enter the number of elements in the circular link list.\n");
+    scanf("%d",&n);
+    last = NULL;
+    if(n==0) return last;
+    // printf("Enter the %d elements\n",n);
+
+    for(i=1;i<=n;i++){
+        // int data;
+        // scanf("%d",&data);
+        last = addatlist(last,i,i);
+    }
+    return last;
+} 
+
+void display(struct node *last){
+    struct node *p;
+    if(last == NULL){
+        printf("List is empty\n");
+        return;
+    }
+    p= last -> link;
+    printf("List is.\n");
+    do{
+        printf("%d ",p->info);
+        p=p->link;
+    }while(p!=last->link);
+    printf("\n\n");
 }
 
-struct node *create_list(struct node *start)
-{
-int n,i;
-struct node *p= start;
-printf("Enter the length of the circular link list.\n");
-scanf("%d",&n);
-for(i=1;i<=n;i++)
-start = addatpos(start,i,i);
-while(p->link != NULL)
-p=p->link;
-last =p;
-last -> link = start;
-return start;
+
+int count(struct node * last){
+    struct node * p;
+    p=last -> link;
+    int c =0;
+    do{
+        p=p->link;
+        c++;
+    }while(p!= last -> link);
+    return c;
 }
 
-int josepushCircle(struct node *start, int k) 
-{
-int i;
-struct node *p , *t;
-p=start;
-while(p->link == p)
-{
-for(i=1;i<k;i++)
-p=p->link;
-t=p;
-p=p->link;
-start = delatpos(start,t->info);
-}
-return p->info;
+void josephusCircle(struct node* last,int k){
+    struct node * p, *tmp;
+    p = last ;
+    while(count(last)>1){
+     for(int i=1;i<k;i++){
+            p=p->link;
+        }
+        if(p->link == last){
+            last = p;
+        }
+        tmp = p->link;
+        p->link = tmp -> link;
+        free(tmp);
+        if(p-> link == p)
+        printf("Josephus Circle number : %d",p->info);
+    }
+
 }
 
-int main()
-{
-int k;
-struct node *start;
-printf("\nCreat a circular link list.\n\n");
-start = create_list(start);
-printf("Count to choose next: ");
-scanf("%d",&k);
-printf("Josepush value is : %d\n",josepushCircle(start,k)); 
-
-return 0;
+int main(){
+    struct node* last = NULL;
+    last = create_list(last);
+    printf("Count to choose next : ");
+    int k;
+    scanf("%d",&k);
+    josephusCircle(last,k);
+    return 0;
 }
