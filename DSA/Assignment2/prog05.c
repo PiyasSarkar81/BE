@@ -92,6 +92,7 @@ void infix_to_postfix()
                 while(!isEmpty() && priority(stack[top])>= priority(symbol))
                 postfix[p++] = pop();
                 push(symbol);
+                break;
             default:
                 // postfix[p++] = symbol;
                 return ;
