@@ -21,11 +21,26 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/OOP/assigment1/Prob.cpp
-'1  1  0  ~/OOP/assigment1/Prog.cpp
-'2  1  0  ~/assigment5/prob1
+'0  1  0  ~/DSA/Assignment2/prog05.c
+'1  1  0  ~/OOP/assigment1/Prob.cpp
+'2  1  0  ~/OOP/assigment1/Prog.cpp
+'3  1  0  ~/assigment5/prob1
 
 # Jumplist (newest first):
+-'  1  0  ~/DSA/Assignment2/prog05.c
+-'  1  0  ~/OOP/assigment1/Prob.cpp
+-'  1  0  ~/OOP/assigment1/Prog.cpp
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/OOP/assigment1/Prog.cpp
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/OOP/assigment1/Prog.cpp
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/OOP/assigment1/Prog.cpp
+-'  1  0  ~/assigment5/prob1
+-'  1  0  ~/assigment5/prob1
 -'  1  0  ~/OOP/assigment1/Prob.cpp
 -'  1  0  ~/OOP/assigment1/Prog.cpp
 -'  1  0  ~/assigment5/prob1
@@ -41,6 +56,9 @@
 -'  1  0  ~/assigment5/prob1
 
 # History of marks within files (newest to oldest):
+
+> ~/DSA/Assignment2/prog05.c
+	"	1	0
 
 > ~/OOP/assigment1/Prob.cpp
 	"	1	0

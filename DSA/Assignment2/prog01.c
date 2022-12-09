@@ -33,6 +33,11 @@ return start;
 
 struct node* delatpos(struct node *start,int pos)
 {
+if(start ==NULL)
+{
+printf("List is empty.\n");
+return;
+}
 struct node *tmp,*p;
 int i;
 if(pos==1)

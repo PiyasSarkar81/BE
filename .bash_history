@@ -1,224 +1,3 @@
-ls
-make prog4
-./prog4
-make prog4
-nano prog5.c
-nano prog4.c
-make prog4
-./prog4
-nano prog4.c
-make prog4
-./prog4
-logout
-ls
-cd assigment5
-ls
-nano prog1.c
-make prog1
-cc prog1.c -o prog1 -lm
-./prog1
-ls
-cd assigment5
-ls
-nano prog2.c
-make prog2
-cc prog2.c -o  prog2 -lm
-./prog2
-nano prog4
-nano prog4.c
-cc prog4.c -o  prog4 -lm
-./prog4
-nano prog6.c
-cc prog6.c -o  prog6 -lm
-nano prog6.c
-cc prog6.c -o  prog6 -lm
-nano prog6.c
-cc prog6.c -o  prog6 -lm
-./prog6
-nano prog8.c
-cc prog8.c -o  prog8 -lm
-./prog8
-nano prog8.c
-nano prog12.c
-cc prog12.c -o  prog12 -lm
-./prog12
-ls
-cd assigment3
-ls
-ld
-ls
-cd assigment3
-ls
-./prog1
-./prog8
-./prog9
-./prog10
-./prog11
-./prog12
-./prog16
-./prog17
-./prog20
-./prog21
-ls
-cd assigment4
-aLS
-ls
-./prog2
-nano prog2
-nano prog2.c
-make prog2
-./prog2
-./prog3
-./prog5
-./prog6
-./prog8
-./prog9
-./prog10
-nano prog10.c
-./prog10
-make prog10
-./prog10
-./prog12
-nano prog12
-nano prog12.c
-make prog12
-./prog12
-./prog14
-./prog19
-ls
-assigment4
-cd assigment4
-ls
-cd part2
-ls
-./prog1
-nano prog1.c
-./prog1
-nano prog1.c
-./prog1
-./prog4
-ls
-cd assigment5
-ls
-./prog2
-./prog1
-./prog2
-nano prog2.c
-./prog2
-ls
-cd assigment5
-ls
-./prog1
-./prog2
-./prog1
-./prog2
-ls
-./prog3
-rm prog3.c
-ls
-rm prog3
-ls
-./prog4.c
-nano prog4
-nano prog4.c
-./prog4
-ls
-./prog6
-ls
-./prog8
-nano prog8.c
-./prog8
-./prog12
-nano prog12.c
-rm prog12.c
-rm prog12
-ls
-nano prog13.c
-make prog13
-./prog13
-nano prog14.c
-./prog14
-make prog14
-nano prog14.c
-make prog14.c
-make prog14
-nano prog14.c
-make prog14
-nano prog14.c
-rm prog14.c
-ls
-mkdir OOP
-ls
-cd OOP
-mkdir assigmrnt1
-ls
-cd assigment1
-rm assigmrnt1
-ls
-cd ..
-ls
-cd OOP
-mkdir assigment1
-ls
-cd assigment1
-nano Prob.cpp
-gcc -o Prob Prob.c
-gcc -o Prob Prob.cpp
-vim Prog.cpp
-vim Prob.cpp
-gcc -o Prob Prob.cpp
-save Prob.cpp
-gcc -o Prob Prob.c++
-gcc -o Prob Prob.C++
-nano Prob.cpp
-g++ -o Prob Prob.cpp
-vim Prob.cpp
-g++ -o Prob Prob.cpp
-ls
-nano Prob.cpp
-g++ -o Prob Prob.cpp
-nano Prob.cpp
-g++ -o Prob Prob.cpp
-./Prob.cpp
-./Prob
-nano Prob.cpp
-g++ -o Prob Prob.cpp
-nano Prob.cpp
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-./Prob2
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-./Prob2
-nano Prob1.cpp
-nano Prob2.cpp
-nano Prob3.cpp
-g++ -o Prob3 Prob3.cpp
-nano Prob2.cpp
-g++ -o Prob2 Prob2.cpp
-./Prob2
-nano Prob3.cpp
-nano Prob4.cpp
-g++ -o Prob4 Prob4.cpp
-nano Prob4.cpp
-g++ -o Prob4 Prob4.cpp
-nano Prob4.cpp
-g++ -o Prob4 Prob4.cpp
-nano Prob4.cpp
-g++ -o Prob4 Prob4.cpp
-./Prob4
-nano Prob.cpp
-nano Prob5.cpp
-g++ -o Prob5 Prob5.cpp
-./Prob5
-nano Prob6.cpp
-g++ -o Prob6 Prob6.cpp
 ./Prob6
 nano Prob3.cpp
 nano Prob7.cpp
@@ -997,4 +776,225 @@ nano prog02.c
 ../ cd
 cd ../ 
 ./.autopush
+logout
+ls
+cd OOP
+ls
+cd assigment1
+ls
+cd ../
+git pull
+./.autopush
+ls
+cd OOP
+cd assigment1
+ls
+nano Prob21.cpp
+nano Prob23.cpp
+make Prob23
+./Prob23
+nano Prob24.cpp
+cd OOP
+ls
+cd assigment1
+ls
+nano Prob23.cpp
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob24.cpp
+make Prob24
+nano Prob25.cpp
+nano Prob21.cpp
+nano Prob25.cpp
+make Prob25
+nano Prob25.cpp
+make Prob25
+./Prob25
+nano Prob25.cpp
+make Prob25
+./Prob25
+nano Prob25.cpp
+make Prob25
+nano Prob25.cpp
+make Prob25
+nano Prob25.cpp
+make Prob25
+nano Prob25.cpp
+make Prob25
+nano Prob26.cpp
+make Prob26
+./Prob26
+nano Prob27.cpp
+make Prob27
+,/Prob27
+./Prob27
+nano Prob27.cpp
+make Prob27
+./Prob27
+nano Prob38.cpp
+make Prob38
+nano Prob38.cpp
+make Prob38
+nano Prob39.cpp
+nano Prob38.cpp
+nano Prob39.cpp
+make Prob39
+nano Prob40.cpp
+nano Prob39.cpp
+nano Prob40.cpp
+make Prob40
+nano Prob40.cpp
+make Prob40
+
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+logout
+ls
+git pull
+cd DSA
+ls
+cd Assigment1
+ls
+cd ../
+cd Assignment2
+ls
+make prog03
+./prog03
+make prog04
+make prog05
+make prog06
+ls
+nano prog07.c
+./prog06
+./prog05
+nano prog07.c
+nano prog06.c
+nano prog07.c
+nano prog05.c
+nano prog04.c
+nano prog07.c
+nano prog04.c
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+make prog06
+./prog07
+nano prog07.c
+make prog07
+./prog07
+nano prog07.c
+./prog07
+nano prog07.c
+make prog07
+nano prog07.c
+make prog07
+nano prog06.c
+make prog06
+nano prog02.c
+nano prog01.c
+nano prog07.c
+cd ../
+ls
+Assigment1
+cd Assigment1
+ls
+nano Prog3.c
+cd ../
+cd Assignment2
+ls
+cd ../
+cd Assigment1
+ls
+nano Prog3.c
+cd ../
+cd Assignment2
+ls
+nano prog01.c
+cd ../
+cd Assigment1
+nano Prog3.c
+ls
+rm Prog3.cpp
+make Prog3.c
+./Prog3
+rm Prog3
+ls
+make Prog3
+nano Prog3.c
+make Prog3
+./Prog3
+nano Prog3.c
+cd ../
+cd Assignment2
+nano prog01.c
+cd ../
+cd Assigment1
+nano Prog3.c
+make Prog3.c
+make Prog3
+cd ../
+cd Assignment2
+ls
+nano prog07.c
+
+ls
+./prog01
+./prog02
+./prog03
+./prog04
+nano prog04.c
+nano prog03.c
+./prog04
+./prog05
+./prog06
+./prog07
+nano prog07.c
+make prog07
+./prog07
+nano prog07.c
+make prog07
+./prog02
+nano prog02.c
+nano prog05.c
+amke prog05
+make prog05
+nano prog05.c
+./prog05
+nano prog05.c
+make prog05
+./prog05
+nano prog05.c
+vim prog05.c
+nano prog05.c
+nano prog01.c
+./prog01
+nano prog01.c
+make prog01
+./prog01
 logout
