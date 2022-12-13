@@ -93,7 +93,7 @@ long int eval_post()
                 temp = a%b;
                 break;
             case '^':
-                temp = a^b;
+                temp = pow(a,b);
                 break;
             }
             push(temp);
