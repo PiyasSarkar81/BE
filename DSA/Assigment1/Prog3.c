@@ -1,84 +1,103 @@
 #include<stdio.h>
-#include<stdlib.h>
-
-struct node {
-int cof, exp;
-struct node * link;
-};
-
-struct node *addatpos(struct node *start,int c,int e, int pos)
-{
-struct node *tmp, *p;
-int i;
-tmp = (struct node*)malloc(sizeof(struct node));
-tmp -> cof = c;
-tmp -> exp = e;
-if(pos==1)
-{
-tmp -> link = start;
-start = tmp;      
-return start;
-}             
-p = start;
-for(i=1;i<pos-1 && p!= NULL ; i++)
-p=p->link;
-if(p==NULL)
-printf("There are less then %d elements.\n",pos);
-else
-{
-tmp -> link = p-> link;
-p->link = tmp;
-}
-return start;
-}
-
-void display(struct node *start)
-{
-struct node *p;
-if(start ==NULL)
-{                 
-printf("List is empty.\n");
-return;            
-}                  
-p= start;  
-while(p!=NULL)
-{            
-printf("%dx^%d ",p->cof,p->exp);
-if(p->link!=NULL) printf(" + ");              
-p=p->link;   
-}
-printf("\n\n");
-}
-
+#include<conio.h>
 int main()
 {
-printf("Enter the 1st polynomial.\n");
-struct node* poly1;
-printf("Enter the number of elements will be inserted \n");
-int n,i;
-scanf("%d",&n);
-printf("(cof,exp)");
-for(i=1;i<=n;i++)
+int a[10], b[10], c[10],m,n,k,k1,i,j,x;
+printf("\nEnter the no. of terms of the polynomial:");
+scanf("%d", &m);
+printf("\nEnter the degrees and coefficients:");
+for (i=0;i<2*m;i++)
+scanf("%d", &a[i]);
+printf("\nFirst polynomial is:");
+k1=0;
+if(a[k1+1]==1)
+printf("x^%d", a[k1]);
+else
+printf("%dx^%d", a[k1+1],a[k1]);
+k1+=2;
+while (k1<i)
 {
-int a,b;
-scanf("%d%d",&a,&b);
-addatpos(poly1,a,b,i);
+printf("+%dx^%d", a[k1+1],a[k1]);
+k1+=2;
 }
-
-printf("Enter the 2st polynomial.\n");
-struct node* poly2;
-printf("Enter the number of elements will be inserted \n");
-int m;
-scanf("%d",&m);
-printf("(cof,exp)");
-for(i=1;i<=n;i++)
+printf("\n\nEnter the no. of terms of 2nd polynomial:");
+scanf("%d", &n);
+printf("\nEnter the degrees and co-efficients:");
+for(j=0;j<2*n;j++)
+scanf("%d", &b[j]);
+printf("\nSecond polynomial is:");
+k1=0;
+if(b[k1+1]==1)
+printf("x^%d", b[k1]);
+else
+printf("%dx^%d",b[k1+1],b[k1]);
+k1+=2;
+while (k1<2*n)
 {
-int a,b;
-scanf("%d%d",&a,&b);
-addatpos(poly2,a,b,i);
+printf("+%dx^%d", b[k1+1],b[k1]);
+k1+=2;
 }
-
-
+i=0;
+j=0;
+k=0;
+while (m>0 && n>0)
+{
+if (a[i]==b[j])
+{
+c[k+1]=a[i+1]+b[j+1];
+c[k]=a[i];
+m--;
+n--;
+i+=2;
+j+=2;
+}
+else if (a[i]>b[j])
+{
+c[k+1]=a[i+1];
+c[k]=a[i];
+m--;
+i+=2;
+}
+else
+{
+c[k+1]=b[j+1];
+c[k]=b[j];
+n--;
+j+=2;
+}
+k+=2;
+}
+while (m>0)
+{
+c[k+1]=a[i+1];
+c[k]=a[i];
+k+=2;
+i+=2;
+m--;
+}
+while (n>0)
+{
+c[k+1]=b[j+1];
+c[k]=b[j];
+k+=2;
+j+=2;
+n--;
+}
+printf("\n\n\n\n\tSum of the two polynomials is:");
+k1=0;
+if (c[k1+1]==1)
+printf("x^%d", c[k1]);
+else
+printf("%dx^%d", c[k1+1],c[k1]);
+k1+=2;
+while (k1<k)
+{
+if (c[k1+1]==1)
+printf("+x^%d", c[k1]);
+else
+printf("+%dx^%d", c[k1+1], c[k1]);
+k1+=2;
+}
+getch();
 return 0;
 }
-
