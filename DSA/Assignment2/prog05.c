@@ -95,7 +95,7 @@ void infix_to_postfix()
                 break;
             default:
                 postfix[p++] = symbol;
-                return ;
+                
             }
         }
     }
