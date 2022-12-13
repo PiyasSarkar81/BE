@@ -1,66 +1,3 @@
-./Prob6
-nano Prob3.cpp
-nano Prob7.cpp
-g++ -o Prob7 Prob7.cpp
-nano Prob7.cpp
-g++ -o Prob7 Prob7.cpp
-./Prog7
-./Prob7
-nano Prob3.cpp
-g++ -o Prob3 Prob3.cpp
-nano Prob3.cpp
-g++ -o Prob3 Prob3.cpp
-./Prob3
-nano Prob8.cpp
-g++ -o Prob8 Prob8.cpp
-./Prob8
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-./Prob9
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-./Prob9
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-ls
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-nano Prob9.cpp
-g++ -o Prob9 Prob9.cpp
-./Prob9
-nano Prob10.cpp
-nano Prob7.cpp
-g++ -o Prob7 Prob7.cpp
-./Prog7
-./Prob7
-nano Prob7.cpp
-nano Prob10.cpp
-g++ -o Prob10 Prob10.cpp
-nano Prob10.cpp
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-./Prog11
-./Prob11
-nano Prob11.cpp
-g++ -o Prob11 Prob11.cpp
-./Prob11
-nano Prob12.cpp
-log out
-logout
-ls
-logout
 ls
 mkdir DSA
 ls
@@ -997,4 +934,67 @@ nano prog01.c
 nano prog01.c
 make prog01
 ./prog01
+logout
+git pull
+git commit -a
+git push
+git merge remote\
+git merge remote
+git pull
+ls
+cd OOP
+ls
+cd assigment1
+ls
+nano Prob28.cpp
+make Prob28
+./Prob28
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob41.cpp
+make Prob41
+./Prob1
+./Prob41
+nano Prob41.cpp
+make Prob41
+./Prob41
+nano Prob41.cpp
+make Prob41
+nano Prob42.cpp
+nano Prob41.cpp
+nano Prob42.cpp
+make Prob42
+nano Prob41.cpp
+nano Prob42.cpp
+make Prob42
+nano Prob42.cpp
+make Prob42
+nano Prob42.cpp
+nano Prob41.cpp
+nano Prob42.cpp
+make Prob42
+nano Prob42.cpp
+make Prob42
+nano Prob42.cpp
+nano Prob41.cpp
+nano Prob42.cpp
+make Prob42
+nano Prob42.cpp
+make Prob42
+nano Prob43.cpp
+make Prob43
+nano Prob43.cpp
+make Prob43
+nano Prob43.cpp
+make Prob43
 logout
