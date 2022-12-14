@@ -107,7 +107,7 @@ int main(){
     top = -1;
     long int value;
     printf("Enter postfix : ");
-    gets(postfix);
+    scanf("%s",&postfix);
     value = eval_post();
     printf("Value of expression : %ld\n",value);
 

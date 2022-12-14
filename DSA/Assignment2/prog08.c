@@ -26,7 +26,7 @@ void insert(int item)
         return;
     }
     if(front == -1) front = 0;
-    if(rear=MAX-1) rear =0;
+    if(rear == MAX-1)rear =0;
     else rear = rear +1;
     cqueue_arr[rear] = item;
 }
@@ -72,7 +72,9 @@ return;
 printf("Queue elements : \n");
 i = front;
 if(front <= rear){
+while(i<=rear){
     printf("%d ",cqueue_arr[i++]);
+}
 }
 else{
     while(i<=MAX-1) printf("%d ",cqueue_arr[i++]);
@@ -81,6 +83,29 @@ else{
 }
 printf("\n");
 }
+
+int count()        
+{
+int i, c=0;    
+i = front;
+if(front <= rear){
+while(i<=rear){
+    i++;
+    c++;
+}
+}
+else{
+    while(i<=MAX-1)
+{i++; c++;}
+    i=0;
+    while(i<=rear)
+{i++; c++;}
+}
+
+return c;    
+
+}
+
 
 int main()
 {
@@ -121,20 +146,7 @@ printf("Deleted item is : %d ",item);
 break;
 
 case 3:
-c =0;
-if(isEmpty)
-printf("Number of elements is : 0");
-else
-{
-if(front <= rear){
-    c = rear - front + 1;
-}
-else{
-    c = MAX - front;
-    c += rear + 1;
-}
-printf("Number of elements is : %d",c);
-}
+printf("Number of elements is : %d",count());
 break;
 
 case 4:
@@ -145,7 +157,7 @@ case 5:
 exit(1);
 break;
 
-defalt:
+default:
 printf("Wrong choice.");
 }
 }

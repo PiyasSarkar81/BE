@@ -30,7 +30,7 @@ void dequeue(struct queue *q)
         }
     }
     x = pop(&q->stack2);
-    printf("%d\n", x);
+    printf("deleted element : %d\n", x);
 }
 void push(struct node** top, int data)
 {

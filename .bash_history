@@ -1,4 +1,3 @@
-ls
 mkdir DSA
 ls
 cd DSA
@@ -998,3 +997,4 @@ make Prob43
 nano Prob43.cpp
 make Prob43
 logout
+./.autopush

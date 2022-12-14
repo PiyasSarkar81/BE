@@ -186,7 +186,7 @@ case 7:
 exit(1);
 break;
 
-defalt:
+default:
 printf("Wrong choice.\n");
 
 }

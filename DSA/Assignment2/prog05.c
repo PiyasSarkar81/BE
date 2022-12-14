@@ -109,7 +109,7 @@ void infix_to_postfix()
 int main(){
     top = -1;
     printf("Enter the infix : ");
-    gets(infix);
+    scanf("%s",&infix);
     infix_to_postfix();
     printf("Postfix : %s\n",postfix);
 

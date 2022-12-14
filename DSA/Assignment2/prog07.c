@@ -16,9 +16,9 @@ else return 0;
 
 void insert(int item)
 {
-      struct node * tmp;
-tmp = (struct node *)malloc(sizeof(struct node));
-if(tmp == NULL)
+      	struct node * tmp;
+	tmp = (struct node *)malloc(sizeof(struct node));
+	if(tmp == NULL)
 {
       printf("Memory is not available\n");
       return;
@@ -26,10 +26,15 @@ if(tmp == NULL)
 tmp -> info = item;
 tmp -> link = NULL;
 if(front == NULL)
+{
 front = tmp;
-else 
+rear = tmp;
+}
+else
+{ 
 rear -> link = tmp;
 rear = tmp;
+}
 }
 
 int del()
@@ -58,6 +63,17 @@ exit(1);
 return front -> info;
 }
 
+int count()
+{
+struct node * p = front;
+int c=0;
+do{
+c++;
+p = p->link;
+}while(p != rear->link);
+return c;
+
+}
 
 void display()
 {
@@ -116,19 +132,7 @@ printf("Deleted item is : %d ",item);
 break;
 
 case 3:
-c =0;
-if(isEmpty)
-printf("Number of elements is : 0");
-else
-{
-struct node* p = front;
-while(p!=rear)
-{
-c++;
-p=p->link;
-}
-printf("Number of elements is : %d",c);
-}
+printf("Number of elements is : %d",count());
 break;
 
 case 4:
@@ -139,7 +143,7 @@ case 5:
 exit(1);
 break;
 
-defalt:
+default:
 printf("Wrong choice.");
 }
 }
