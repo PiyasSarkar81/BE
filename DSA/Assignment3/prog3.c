@@ -72,39 +72,39 @@ void insert(int data)
     }
 }
 
-struct node* minValueNode(struct node* node)
+struct node* deleteNode(struct node* ptr, int key)
 {
-    struct node* current = node;
-    while (current && current->lChild != NULL)
-        current = current->lChild;
- 
-    return current;
-}
-
-struct node* deleteNode(int key)
-{
-    if (root == NULL)
-        return root;
-    if (key < root->data)
-        root->lChild = deleteNode(key);
-    else if (key > root->data)
-        root->rChild = deleteNode( key);
-    else {
-        if (root->lChild == NULL) {
-            struct node* temp = root->rChild;
-            free(root);
-            return temp;
-        }
-        else if (root->rChild == NULL) {
-            struct node* temp = root->lChild;
-            free(root);
-            return temp;
-        }
-        struct node* temp = minValueNode(root->rChild);
-        root->data = temp->data;
-        root->rChild = deleteNode(temp->data);
+    struct node *tmp, *succ;
+    if(ptr == NULL)
+    {
+        printf("Key is not found.\n");
+        return(ptr);
     }
-    return root;
+    if(key < ptr -> data)
+    ptr -> lChild = deleteNode(ptr->lChild,key);
+    else if(key > ptr -> data)
+    ptr -> rChild = deleteNode(ptr-> rChild,key);
+    else{
+        if(ptr->lChild != NULL && ptr -> rChild != NULL)
+        {
+            succ = ptr -> rChild;
+            while (succ -> lChild)
+                succ = succ->lChild;
+            ptr ->data = succ ->data;
+            ptr -> rChild = deleteNode(ptr->rChild, succ->data);
+        }
+        else{
+            tmp = ptr;
+            if(ptr -> lChild != NULL)
+            ptr = ptr->lChild;
+            else if (ptr->rChild != NULL)
+            ptr= ptr -> rChild;
+            else
+            ptr = NULL;
+            free(tmp);
+        }
+    }
+    return ptr;
 }
 
 void inOrderTraversal(struct node* root)
@@ -196,7 +196,8 @@ int main(){
         case 5:
             printf("Enter the key to be deleted : ");
             scanf("%d",&key);
-
+            root = deleteNode(root, key);
+            break;
         case 6:
             printf("In-order-traversal is:\n");
             inOrderTra(root);
@@ -208,6 +209,7 @@ int main(){
         case 7:
             exit(1);
         default:
+            printf("Wrong choice.\n");
             break;
         }
     }
