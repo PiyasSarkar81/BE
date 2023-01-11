@@ -1,73 +1,76 @@
-#include<iostream>
 
+
+#include<iostream>
 using namespace std;
 
-
-
-class Shape2D{
-public:
-Shape2D()
-{ }
-
-virtual double parimeter()=0;
-
-virtual double area()=0;
-
+class Shape2D
+{
+    public:
+    virtual void area() = 0;
+    virtual void perimeter() = 0;
 };
 
-class Rect : public Shape2D
+
+class Circle :  public Shape2D
 {
-double length,wirth;
-
-public:
-
-Rect(double l = 0,double w = 0)
-{
-length = l;
-wirth = w;
-}
-
-double parimeter()
-{
-return 2*(length+wirth);
-}
-
-double area()
-{
-return length * wirth;
-}
-
+    public :
+    int radius;
+    Circle()
+    {
+        cout << "Enter the radius of the circle :\n";
+        int r;
+        cin >> r;
+        this->radius = r;
+    }
+    void area()
+    {
+        cout << "The area is " << 3.14*radius*radius << "\n";
+    }
+    void perimeter()
+    {
+           cout << "The perimeter is " << 2*3.14*radius << "\n";
+    }
 };
 
-class Circle : public Shape2D
+class Rectangle : public Shape2D
 {
-double redious;
-
-public:
-
-Circle(double r =0)
-{
-redious = r;
-}
-
-double parimeter()
-{
-return 2*3.14*redious;
-}
-
-double area()
-{
-return 3.14*redious*redious;
-}
-
+    public :
+    int len,bre;
+    Rectangle()
+    {
+        cout << "Enter the length of the rectangle :\n";
+        int x;
+        cin >> x;
+        cout << "Enter the breadth of the rectangle :\n";
+        int y;
+        cin >> y;
+        this->len = x;
+        this->bre = y;
+    }
+    void area()
+    {
+        cout << "The area is " << len*bre << "\n";
+    }
+    void perimeter()
+    {
+        cout << "The perimeter is " << 2*(len+bre) << "\n";
+    }
 };
-
 
 
 int main()
 {
-
-
-
-return 0;
+    Shape2D *ptr[5];
+    Circle ob1,ob2,ob3;
+    Rectangle obj1,obj2;
+    ptr[0] = &ob1;
+    ptr[1] = &ob2;
+    ptr[2] = &ob3;
+    ptr[3] = &obj1;
+    ptr[4] = &obj2;
+    for(int i = 0; i < 5; i++)
+    {
+        ptr[i]->area();
+        ptr[i]->perimeter();
+    }
 }

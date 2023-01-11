@@ -1,6 +1,14 @@
 #include<stdio.h>
 #include <stdlib.h>
 
+void printArray(int arr[], int n)          
+{
+    int i;
+    for (i = 0; i < n; i++)                
+        printf("%d ", arr[i]);
+    printf("\n");         
+}
+
 void insertionSort(int arr[], int n)
 {
     int i, key, j;
@@ -12,7 +20,9 @@ void insertionSort(int arr[], int n)
             j = j - 1;
         }
         arr[j + 1] = key;
+	printArray(arr,n);
     }
+    printf("\n");
 }
 
 void swap(int *xp, int *yp)
@@ -25,6 +35,7 @@ void swap(int *xp, int *yp)
 void selectionSort(int arr[], int n)
 {
     int i, j, min_idx;
+    printf("Stapes in selection sort\n");
     for (i = 0; i < n-1; i++)
     {
         min_idx = i;
@@ -33,50 +44,51 @@ void selectionSort(int arr[], int n)
             min_idx = j;
            if(min_idx != i)
             swap(&arr[min_idx], &arr[i]);
+	printArray(arr,n);
     }
-}
- 
-void printArray(int arr[], int n)
-{
-    int i;
-    for (i = 0; i < n; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
 }
 
 void bubbleSort(int arr[], int n)
 {
     int i, j;
+    printf("Stapes in Bubble sort\n");
     for (i = 0; i < n - 1; i++)
+    {
         for (j = 0; j < n - i - 1; j++)
+	{
             if (arr[j] > arr[j + 1])
                 swap(&arr[j], &arr[j + 1]);
+	    printArray(arr,n);
+	}
+    }	    
 }
 
-int partition(int arr[], int low, int high)
+int partition(int arr[], int low, int high, int n)
 {
     int pivot = arr[high];
-    int i= (low - 1);
-    for (int j = low; j <= high - 1; j++) {
+    int i= (low - 1),j;
+    for ( j = low; j <= high - 1; j++) {
         if (arr[j] < pivot) {
             i++; 
             swap(&arr[i], &arr[j]);
         }
+	
     }
     swap(&arr[i + 1], &arr[high]);
+    printArray(arr,n);
     return (i + 1);
 }
 
-void quickSort(int arr[], int low, int high)
+void quickSort(int arr[], int low, int high, int n)
 {
     if (low < high) {
-        int pi = partition(arr, low, high);
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
+        int pi = partition(arr, low, high, n);
+        quickSort(arr, low, pi - 1, n);
+        quickSort(arr, pi + 1, high, n);
     }
 }
 
-void merge(int arr[], int l, int m, int r)
+void merge(int arr[], int l, int m, int r, int n)
 {
     int i, j, k;
     int n1 = m - l + 1;
@@ -110,18 +122,19 @@ void merge(int arr[], int l, int m, int r)
         j++;
         k++;
     }
+    printArray(arr,n);
 }
 
-void mergeSort(int arr[], int l, int r)
+void mergeSort(int arr[], int l, int r, int n)
 {
     if (l < r) {
         int m = l + (r - l) / 2;
-        mergeSort(arr, l, m);
-        mergeSort(arr, m + 1, r); 
-        merge(arr, l, m, r);
+        mergeSort(arr, l, m, n);
+        mergeSort(arr, m + 1, r, n); 
+        merge(arr, l, m, r, n);
     }
 }
-void heapify(int arr[], int N, int i)
+void heapify(int arr[], int N, int i, int n)
 {
     int largest = i;
     int left = 2 * i + 1;
@@ -132,30 +145,33 @@ void heapify(int arr[], int N, int i)
         largest = right;
     if (largest != i) {
         swap(&arr[i], &arr[largest]);
-        heapify(arr, N, largest);
+        heapify(arr, N, largest, n);
     }
+    printArray(arr,n);
 }
 
-void heapSort(int arr[], int N)
+void heapSort(int arr[], int N, int n)
 {
-    for (int i = N / 2 - 1; i >= 0; i--)
-        heapify(arr, N, i);
-    for (int i = N - 1; i >= 0; i--) {
+    int i;
+    for ( i = N / 2 - 1; i >= 0; i--)
+        heapify(arr, N, i, n);
+    for ( i = N - 1; i >= 0; i--) {
         swap(&arr[0], &arr[i]);
-        heapify(arr, i, 0);
+        heapify(arr, i, 0, n);
     }
 }
 
 int main(){
     int n,i,choice;
+    
     printf("Enter the number of elements.\n");
     scanf("%d",&n);
     int arr[n];
     printf("Enter the elements.\n");
     for ( i = 0; i < n; i++)
-    {
-        scanf("%d",&arr[i]);
-    }
+        {
+        	scanf("%d",&arr[i]);
+    	}
     while(1)
     {
         printf("\n1.Insertion sort.\n");
@@ -171,33 +187,42 @@ int main(){
         switch (choice)
         {
         case 1:
+	    printf("Stapes :");
             insertionSort(arr,n);
-            printf("Insertion sort :\n");
+            printf("Insertion sorted array :\n");
             printArray(arr,n);
             break;
         
         case 2:
             selectionSort(arr,n);
+	    printf("Selection sorted array :\n");
             printArray(arr,n);
             break;
 
         case 3:
             bubbleSort(arr, n);
+	    printf("Bubble sorted array :\n");
             printArray(arr,n);
             break;
 
         case 4:
-            quickSort(arr, 0, n);
+	    printf("stapes in quick sort.\n");
+            quickSort(arr, 0, n, n);
+	    printf("Quick sorted array :\n");
             printArray(arr,n);
             break;
         
         case 5:
-            mergeSort(arr,0,n);
+	    printf("stapes of merge sort.\n");
+            mergeSort(arr,0,n,n);
+	    printf("Merge sorted array :\n");
             printArray(arr,n);
             break;
 
         case 6:
-            heapSort(arr,n);
+	    printf("stapes of heap sort.\n");
+            heapSort(arr,n,n);
+	    printf("Heap sorted array :\n");
             printArray(arr,n);
             break;
 

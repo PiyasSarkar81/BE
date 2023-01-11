@@ -80,6 +80,7 @@ struct node* deleteNode(struct node* ptr, int key)
         printf("Key is not found.\n");
         return(ptr);
     }
+    
     if(key < ptr -> data)
     ptr -> lChild = deleteNode(ptr->lChild,key);
     else if(key > ptr -> data)
@@ -159,7 +160,7 @@ int main(){
             printf("Enter the number of elements in the BST.\n");
             int n,s;
             scanf("%d",&n);
-            printf("Enter the elements.\n");
+            printf("Enter the elements in pre-order-traversal.\n");
             while(n--){
                 scanf("%d",&s);
                 insert(s);
@@ -181,6 +182,11 @@ int main(){
             for(i=0;i<count;i++)
             {
                 if(inOrderArr[i]==key) break;
+            }
+	    if(i==count)
+            {
+              printf("Key is not present in the Tree.\n");
+              break;
             }
             if(inOrderArr[i-1] != 0)
                 printf("in-order-predessasor of the key is %d\n",inOrderArr[i-1]);

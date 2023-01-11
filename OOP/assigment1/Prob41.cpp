@@ -15,32 +15,32 @@ this-> age = age;
 this -> hight = hight;
 } 
 
-string getName()
+string get_name()
 {
 return name;
 }
 
-int getAge()
+int get_age()
 {
 return age;
 }
 
-double getHight()
+double get_hight()
 {
 return hight;
 }
 
-void setName(string n)
+void set_name(string n)
 {
 name = n;
 }
 
-void setAge(int a)
+void set_age(int a)
 {
 age =a;
 }
 
-void setHight(double h)
+void set_hight(double h)
 {
 hight = h;
 }
@@ -68,22 +68,22 @@ this -> roll = roll;
 this -> yoa = yoa;
 }
 
-int getRollno()
+int get_rollno()
 {
 return roll;
 }
 
-string getYearOfAdmission()
+string get_yearOfAdmission()
 {
 return yoa;
 }
 
-void setRollno(int r)
+void set_rollno(int r)
 {
 roll = r;
 }
 
-void setYearOfAdmission(string y )
+void set_yearOfAdmission(string y )
 {
 yoa = y;
 }

@@ -81,6 +81,11 @@ cout<<"ALLOWANCE : "<<allowance<<endl;
 
 int main()
 {
+Manager ob1("Manager",49000.00,"Merkating");
+Clerk ob2("Person5",20000.00,1200.00);
+ob1.printDetails();
+ob2.printDetails();
+
 Employee *arr[6];
 arr[0] = new Employee("Person1", 10000.00);
 arr[1] = new Employee("Person2", 12000.00);
@@ -89,7 +94,7 @@ arr[3] = new Manager("Person4",45000.00,"Seales");
 arr[4] = new Clerk("Person5",20000.00,1200.00);
 arr[5] = new Clerk("Person6",20000.00,1000.00);
 
-cout<<"Enter the Detals of all employee\n\n";
+cout<<"\nDetails of all employee\n\n";
 
 for(int i ; i<6;i++)
 {
